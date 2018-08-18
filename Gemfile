@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'dotenv-rails', '~> 2.1'
 gem 'faraday', '~> 0.15.2'
-gem 'omniauth-twitch'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
