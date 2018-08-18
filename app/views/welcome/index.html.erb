@@ -1,0 +1,17 @@
+<div class="container">
+<div class="row">
+    <h1>Welcome, <%= @user['display_name'] %></h1>
+</div>
+<div class="row">
+    <h2>Subscription</h2>
+</div>
+<div class="row">
+    <p>
+    <% if @subs['status'] == 404 %>
+        You are not subscribed to Jack AM. Fix that right now.
+    <% else %>
+        Thank you for subscribing to Jack AM
+    <% end %>
+    </p>
+</div>
+</div>

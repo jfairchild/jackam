@@ -1,0 +1,17 @@
+<div class="container">
+
+<h1>Jack AM</h1>
+<p>Login with Twitch</p>
+
+<%= link_to @twitch_url do %>
+
+<img width=100px src="<%= asset_path 'Twitch_Purple_RGB.png' %>" />
+
+<% end %>
+<div class="row">
+  <p><%= 
+  params['code']
+  %>
+  </p>
+</div>
+</div>

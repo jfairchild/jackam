@@ -10,6 +10,8 @@ module Jackam
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    config.action_controller.forgery_protection_origin_check = true
+    config.action_controller.per_form_csrf_tokens = true
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
