@@ -7,7 +7,8 @@ class AuthenticatedUserController < WebController
   private
 
   def require_logged_in_user!
-    return if session[:_state_token] == Base64.urlsafe_decode64(cookies.encrypted[:twitch_state])
+    return if !session.blank? && !cookies.encrypted[:twitch_state].blank? &&
+              (session[:_state_token] == Base64.urlsafe_decode64(cookies.encrypted[:twitch_state]))
     redirect_to login_path
   end
 end
