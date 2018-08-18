@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # why
 class SessionsController < UnauthenticatedUserController
   skip_before_action :redirect_if_logged_in, only: :destroy
