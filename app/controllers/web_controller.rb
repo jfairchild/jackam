@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # not needed
 class WebController < ApplicationController
   helper_method :logged_in?
@@ -5,6 +7,6 @@ class WebController < ApplicationController
   private
 
   def logged_in?
-    user_signed_in?
+    false if cookies.encrypted[:twitch_code].nil?
   end
 end

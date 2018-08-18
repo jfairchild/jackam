@@ -4,7 +4,6 @@
 class WelcomeController < AuthenticatedUserController
   # show the subscriber data
   def index
-    
     @resp = get_twitch_user_auth(cookies.encrypted[:twitch_code])
     redirect_to login_path if @resp['status'] == 400
 

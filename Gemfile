@@ -22,7 +22,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-gem 'devise'
 gem 'dotenv-rails', '~> 2.1'
 gem 'faraday', '~> 0.15.2'
 gem 'pg', '~> 1.0'
